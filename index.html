@@ -3,20 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banana | translator</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale.0">
+    <title>Minion translater</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
 <body>
-
-    <h1>Welcome to my banana Translator</h1>
-   
-    <button>ClickMe</button>
-    <textarea name="" id="box-1" cols="100" rows="13" placeholder="Here is your translation"></textarea>
-    <div class="box-2">
-    
+    <header>
+        <h1 class="heading">Translate to minion language  😁</h1>
+    </header>
+    <main>
+        <div class="input-translate-section">
+        <p class="discription">Type msg what you want to translate  👇</p>
+        <textarea name="" id="input-text" cols="65" rows="10" placeholder="Type something to talk like minion speaks" ></textarea>
     </div>
 
-    <script src="index.js"></script>
+        <div class="btn-message">
+            <button id="translate-btn">Translate</button>
+        <p class="error-msg"></p>
+    </div>
+        <div class="output-translate-section">
+        <p class="discription">Translate will be come here 👇</p>
+        <div id ="text-translated"> <textarea name="" id="output-text" cols="65" rows="10" placeholder="Appear message like minion speaks" disabled ></textarea> </div>
+    </div>
+    </main>
+    <div class="social-touch">
+        <footer>
+            <p><a href="" class="fab fa-github icon-style" ></a></p>
+            <p><a href="" class="fab fa-linkedin icon-style"></a></p>
+            <p><a href="" class="fab fa-twitter-square icon-style"></a></p>
+        </footer>
+    </div>
+    
+     <script src="index.js" type="text/javascript"></script>
 </body>
 </html>
