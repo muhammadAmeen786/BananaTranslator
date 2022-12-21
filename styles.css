@@ -11,30 +11,13 @@ a {
 }
 
 :root {
-  --bg--primary--color: rgb(251, 255, 0);
+  --bg--primary--color: rgb(178, 179, 113);
   --text--primary--color: white;
   --text-secondary-color : black;
+  --backgroundColor : rgb(120, 113, 113);
 }
-
-body {
-  background-image: url("minion-background-min.jpg");
-  background-size: cover;
-  position: relative;
-  background-repeat: no-repeat;
-  height: 100vh;
-  background-attachment: fixed;
-}
-
-body::after {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background: #14141499;
-  z-index: -1;
-  backdrop-filter: blur(2px);
+body{
+  background-color:var(--backgroundColor) ;
 }
 
 .heading {
@@ -95,7 +78,7 @@ main {
   font-size: 1.1rem;
   border-radius: 10px;
   font-weight: 500;
-  background: linear-gradient(45deg, #f7eee9, #d0c8c4);
+  background-color: var(--bg--primary--color);
   cursor: pointer;
 }
 

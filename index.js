@@ -6,23 +6,11 @@ var errorMsg = document.querySelector(".error-msg")
 // var serverurl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
 var serverurl ="https://api.funtranslations.com/translate/minion.json"
 
-function  urlAdd(inputurl){
-    return serverurl +"?"+"text="+ inputurl
+function  urlAdd(inputText){
+    return serverurl +"?"+"text="+ inputText
 }
 
-function textdisplaying(){
-    var displayingMsg = inputText.value;
- 
-    fetch(urlAdd(displayingMsg))
-    .then(response => response.json())
-    .then(json => {
-        var translateText = json.contents.translated;
-        outputText.innerText = translateText;
-        console.log(translateText)
-        outputText.scrollIntoView()
-    })
-    .catch(() => alert("some error occured"))
-}
+
 
 translateBtn.addEventListener("click",function(){
    
@@ -41,4 +29,20 @@ translateBtn.addEventListener("click",function(){
 
 })
 
-console.log(urlAdd)
+
+
+function textdisplaying(){
+    var translatingMessage = inputText.value;
+ 
+    fetch(urlAdd(translatingMessage))
+    .then(response => response.json())
+    .then(json => {
+        var translateText = json.contents.translated;
+        outputText.innerText = translateText;
+        console.log(translateText)
+        outputText.scrollIntoView()
+    })
+    .catch(() => alert("some error occured"))
+}
+
+// console.log(urlAdd)
