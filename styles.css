@@ -71,6 +71,7 @@ main {
   color: var(--text-secondary-color);
   resize: none;
   box-shadow: -4px -4px 0px #c2bab7;
+  text-align: center;
 }
 
 #translate-btn {

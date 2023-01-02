@@ -39,10 +39,9 @@ function textdisplaying(){
     .then(json => {
         var translateText = json.contents.translated;
         outputText.innerText = translateText;
-        console.log(translateText)
         outputText.scrollIntoView()
     })
-    .catch(() => alert("some error occured"))
+    .catch(() => outputText.innerText = "Some error Occured (limit exceeded for fetch requests)")
 }
 
 // console.log(urlAdd)
